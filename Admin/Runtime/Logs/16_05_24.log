@@ -1,0 +1,30 @@
+[ 2016-05-24T21:55:49+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003145s ]
+
+[ 2016-05-24T21:56:11+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003614s ]
+
+[ 2016-05-24T21:56:12+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003661s ]
+
+[ 2016-05-24T21:56:12+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003494s ]
+
+[ 2016-05-24T21:58:45+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+
+[ 2016-05-24T21:58:46+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003312s ]
+

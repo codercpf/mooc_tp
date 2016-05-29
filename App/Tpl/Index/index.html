@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ </head>
+ <body>
+ <!-- 
+ 	<?php //echo $name2; ?>
+ 	<hr/>
+ 	<?php //echo $name ?>
+ 	<hr/>
+ 	<?php //echo $sex."<br/>".$today ?>
+ -->
+<!-- 
+	{$me['name']}<br/>
+	{$me['age']}<br/>
+	{$me.age}<br/>
+	{//$me['sex']}<br/>
+	{//$me['sex'] | default="male"}<br/>
+设置默认值时不能有空格
+	{$me.sex|default="man"}<br/>
+运算操作必须以数组方式，不能以对象方式
+	{$me['age']+1}   
+ -->
+<!-- 
+ 	{$me['name']|md5|substr=0,5}<br/>
+ 	{$name}
+ -->
+<!-- 
+ 	{$now|date="Y-m-d H:i:s", ###}<br/>
+ 	{$Think.version}<br/>
+ 	{$Think.server.http_host}
+ -->
+
+<!-- 
+ <volist name='person' id='data' offset='1' length='2' empty='我没数据'>
+ 	{$data['name']}----------{$data['age']}<br/>
+ </volist>
+ <hr>
+foreach循环没有volist功能多
+ <foreach name="person" item='data'>
+ 	{$data['name']}--------{$data['age']}<br/>
+ </foreach>
+ -->
+
+eq=   neq!=   gt>   egt>=   lt<   elt<=   heq===   nheq!==
+<br/><br/>
+<!-- 
+ <for start='1' end='10' comparison='elt' name='k'>
+ 	{$k}<br/>
+ </for>
+ -->
+
+<!-- 
+除了if之外，其他标签都要加结束符 /
+ <if condition="$num gt 10">num大于10
+ <elseif condition="$num lt 10"/>num小于10
+ <else/>num等于10
+ </if>
+ -->
+
+<!--
+除开始、结束以外，都要加结束符“/”
+ <switch name="name">
+ 	<case value="laoshi">小明，滚出去！</case>
+ 	<case value="xiaohong|xiaolan|xiaohuang">小明，同学让你滚出去！</case>
+ 	<default/>小明，自己滚出去了 	
+ </switch>
+-->
+<!-- 
+比较标签<br/>
+	<compare name='num' value='11' type='neq'>
+		num的值不是11
+	<else/>
+		num的值是11
+	</compare>
+ -->
+
+<!--
+ in notin between(1-10)<br/>
+ {$num}
+ <br/>
+ <in name='num' value='11,12,13'>在in包含的数据集中<else/>不在in包含的数据集中</in>
+ <br/>
+ <between name='num' value='1,12'>确实在这个区间<else/>确实不在这个区间</between>
+ <br/>
+ range只能代替in/notin，即判断单个数值是否在一个集合中；区间判断只能用between/notbetween<br/>
+ <range name='num' value='1,13,19' type='in'>在里面<else/>不在里面</range>
+ <br/><br/>
+ {$num>13 ? '大于13' : '不大于13'}
+-->
+
+
+<!-- 属性中间不能加标签符号，故下面直接用name='data.age' -->
+
+	<foreach name='person' item='data'>
+		<egt name='data.age' value='18'>{$data.name}已经成年了！<else/>{$data.name}还是个孩子！</egt><br/>
+	</foreach>
+	<br/><br/>
+
+	{$num}<br/>
+	<eq name='num' value='11'>{$num}等于11<else/>{$num}不等于11</eq><br/>
+	<gt name='num' value='10'>{$num}大于10<else/>{$num}不大于10</gt>
+
+
+
+ </body>
+ </html> 
